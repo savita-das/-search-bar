@@ -1,0 +1,120 @@
+*{
+   box-sizing:border-box; 
+}
+body{
+    background: #202124;
+    margin:0px;
+    color:#E8EAED;
+   
+}
+.container{
+    min-height:50vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    
+}
+.Doodle{
+    width:100%;
+    max-width:400px;
+}
+.searchbar{
+    border:0.8px solid #5F6368;
+    border-radius: 40px;
+    display:flex;
+    align-items:center;
+    padding:16px 25px;
+    height:14px;
+}
+
+.sugession-container{
+    width:100%;
+    max-width: 450px;
+    position:relative;
+}
+.searchbar input{
+    background-color:transparent;
+    border:none;
+    outline: none;
+    color:inherit;
+    width:100%;
+    /* background-color: aqua; */
+    padding:10px 10px;
+     font-size:15px;
+    font-weight: 400;
+    font-family: inherit;
+}
+.searchbar:hover,.searchbar:focus-within{
+    background-color: #303134;
+    border-color:#303134;
+    box-shadow: 0px 0px 4px 2px #1f2022;
+   
+}
+
+.searchbar:focus-within{
+     border-radius: 20px 20px 0px 0px;
+    
+}
+.searchicon{
+    width:15px;
+    
+}
+.doodle-bar{
+ margin-bottom: 15px;
+}
+.cross-icon{
+    width:15px;
+}
+.sugession-menue{
+    background-color: #303134;
+    border-color:#303134;
+    box-shadow: 0px 6px 4px 2px #1f2022;
+    border-radius: 0px 0px 20px 20px;
+    padding:0px 0px 10PX;
+    width:100%;
+    display:none;
+    position: absolute;
+    overflow: hidden;
+}
+.sugession-menue p{
+    margin:0px;
+    padding:8px 24PX;  
+}
+.cross-icon{
+    display: none;
+}
+.sugession-container:focus-within .cross-icon{
+    display:block;
+}
+.sugession-menue p:hover{
+    background-color:#3c4043;
+    cursor:pointer;
+    border-radius:2px;
+}
+
+.sugession-menue p:focus-within{
+    display:block;
+}
+.searchbar:focus-within+ .sugession-menue{
+    display:block;
+}
+
+.border-line{
+   border-top:1.2px solid #5F6368;
+   margin-inline:25px;
+   padding-bottom:5px;
+   
+   
+}
+
+.doodle{
+    position:absolute;
+    height:200px;
+    right:200px;
+    bottom:0;
+}
+.sugession-menue p img{
+    margin-right: 12px;
+}
